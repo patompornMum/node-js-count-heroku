@@ -1,4 +1,4 @@
-#1. Set engines
+#1. Set engines // เป็นไปได้ set ไว้ที่ package.json ด้วย 
 -----------------------------------
  "engines": {
     "node": "12.16.3",
@@ -18,3 +18,7 @@ sudo yarn global add heroku
 #4. Check log //ต้องลง the heroku cli ด้วย
 -----------------------------------
 heroku logs --tail --app node-js-count
+
+#5. set คำสั่ง start ด้วยว่าให้รัน file ไหน (package.json) *defaul heroku มันจะรัน server.js
+-----------------------------------
+"start": "node app.js" 
